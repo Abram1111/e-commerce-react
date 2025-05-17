@@ -55,7 +55,7 @@ const AllProducts: React.FC = () => {
 
         const uniqueCats = Array.from(
           new Set(data.products.map((p: Product) => p.category))
-        );
+        ) as string[];
         setCategories(["All", ...uniqueCats]);
         setFilteredProducts(data.products);
       } catch (err) {

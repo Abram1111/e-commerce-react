@@ -20,7 +20,6 @@
  */
 
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 interface User {
   firstName: string;
@@ -33,8 +32,6 @@ const Login: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [alertVisible, setAlertVisible] = useState(false);
-
-  const navigate = useNavigate();
 
   /**
    * Handles user login validation.
